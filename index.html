@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    var language;
+
+    $(document).ready(function () {
+      let langKey = localStorage.getItem("language");
+      if (langKey == null) {
+        changeLanguage("de");
+      }
+      else {
+        changeLanguage(langKey);
+      }
+
+      $(".section-link").click(function () {
+        toggleMobileMenu();
+      });
+
+      $(".mobile-nav-links a").click(function () {
+        toggleMobileMenu();
+      });
+
+      window.onscroll = function () { myFunction() };
+
+      var navbar = $("#main-nav");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.addClass("sticky")
+        } else {
+          navbar.removeClass("sticky");
+        }
+      }
+
+    });
+
+
+    function toggleMobileMenu() {
+      $(".nav-links").toggleClass("d-xs-none");
+      $(".nav-links").toggleClass("mobile-nav-links")
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <title>Praxis für Psychologische Beratung</title>
+</head>
+
+<!--Mobile ekranda calismiyor-->
+
+<body>
+  <div id="layout-container">
+    <section id="header" class="pt-3">
+      <h2 data-lang="job_title">Klinik Psikolog</h2>
+    </section>
+
+    <nav id="main-nav">
+
+      <div class="mobile-nav">
+        <div class="menu-icon-container">
+          <a href="javascript:void(0);" onclick="toggleMobileMenu()">
+            <img class="menu-icon" src="images/icons/menu/menu-three-lines.svg" alt="german flag">
+          </a>
+        </div>
+      </div>
+      <div class="site-language">
+        <a href="#" class="language-flag icon-de" onclick="changeLanguage('de')">
+          <img class="language-icon" src="images/icons/flags/flag-germany.svg" alt="german flag">
+        </a>
+        <a href="#" class="language-flag icon-tr" onclick="changeLanguage('tr')">
+          <img class="language-icon" src="images/icons/flags/flag-turkey.svg" alt="turkish flag">
+        </a>
+      </div>
+      <div class="nav-links d-xs-none">
+
+        <a data-lang="navigation_text_1" class="section-link" href="#section-about">Über uns</a>
+
+        <a data-lang="navigation_text_2" class="section-link" href="#section-consult-child">Beratung für Kinder und
+          Jugendliche</a>
+
+        <a data-lang="navigation_text_3" class="section-link" href="#section-consult-adult">Beratung für Erwachsene</a>
+
+        <a data-lang="navigation_text_4" class="section-link" href="#section-consult-family">Beratung für Familien</a>
+
+        <a data-lang="navigation_text_5" class="section-link" href="#section-game-therapy">Spieltherapie</a>
+
+        <a data-lang="navigation_text_6" class="section-link" href="#section-contact">Kontakt</a>
+      </div>
+
+
+    </nav>
+
+    <section id="section-header2" class="min-vh-100">
+      <header class="">
+        <h1 class="mt-2 mb-4">Firat Turan</h1>
+        <!--<h2 data-lang="data6">Klinik Psikolog</h2>-->
+        <h2 data-lang="job_short_description">Yetiskin,Aile, Cocuk ve Ergen Psikolijik Danismanligi</h2>
+      </header>
+    </section>
+
+    <section id="section-about" class="min-vh-100 section-color-1 py-6">
+      <div class="intro-container flex-row ">
+        <div class="flxc-lg-2 flxc-md-1 flxc-sm-1 flex-xs-1 ">
+          <img src="images/Firat-Bogaz.jpg" alt="Photo" class="w-100" loading="lazy" />
+        </div>
+
+        <div class="header-text-box flxc-lg-2 flxc-md-1 flxc-sm-1 flex-xs-1 ">
+          <h3 class="mb-2" data-lang="welcome_title">Willkommen in meiner Privatpraxis für Psychotherapie und Beratung
+          </h3>
+          <p data-lang="home_greeting_text">Ben bir Psikolog olarak dünyaya gelmedim. insan olarak varlığımı ve onun
+            anlamını keşfetmeye geldim. Bu keşif yolculuğum ise beni bu değerli meslekle buluşturdu. şimdi her şey çok
+            daha anlamlı. Çünkü; yolculuğumda ben insanların hayatına dokunmaya başladım ve bu çok özel.</p>
+        </div>
+      </div>
+
+      <!--<div id="feature-container" class="flex-row">
+        <div class="feature-box flxc-lg-4 flxc-md-3 flxc-sm-2 flxc-xs-1">
+          <img class="mt-2 mb-4" src="images/accessibility-outline.svg" style="width:6rem" alt="test icon">
+          <h3 class="mb-4"> Explore the world</h3>
+          <p>
+            Dolor sit amet consectetur, adipisicing elit. Consequatur rerum
+            blanditiis dicta ea eos odio aliquam libero officiis!
+          </p>
+        </div>
+        <div class="feature-box flxc-lg-4 flxc-md-3 flxc-sm-2 flxc-xs-1">
+          <img class="mt-2 mb-4" src="images/accessibility-outline.svg" style="width:6rem" alt="test icon">
+          <h3 class="mb-3"> Explore the world</h3>
+          <p>
+            Dolor sit amet consectetur, adipisicing elit. Consequatur rerum
+            blanditiis dicta ea eos odio aliquam libero officiis!
+          </p>
+        </div>
+        <div class="feature-box flxc-lg-4 flxc-md-3 flxc-sm-2 flxc-xs-1">
+          <img class="mt-2 mb-4 " src="images/accessibility-outline.svg" style="width:6rem" alt="test icon">
+          <h3 class="mb-3"> Explore the world</h3>
+          <p>
+            Dolor sit amet consectetur, adipisicing elit. Consequatur rerum
+            blanditiis dicta ea eos odio aliquam libero officiis!
+          </p>
+        </div>
+        <div class="feature-box flxc-lg-4 flxc-md-3 flxc-sm-2 flxc-xs-1 ">
+          <img class="mt-2 mb-4" src="images/accessibility-outline.svg" style="width:6rem" alt="test icon">
+          <h3 class="mb-3"> Explore the world</h3>
+          <p>
+            Dolor sit amet consectetur, adipisicing elit. Consequatur rerum
+            blanditiis dicta ea eos odio aliquam libero officiis!
+          </p>
+        </div>
+      </div>-->
+    </section>
+
+    <section id="section-consult-child" class="min-vh-100 section-color-3 py-6">
+      <article>
+
+        <h2 data-lang="navigation_text_2">Beratung für Kinder und
+          Jugendlich</h2>
+
+        <h4 class="mt-2 mb-2" data-lang="child_section_sub_title">Çocuk Terapisi</h4>
+
+        <!--Child Cards-->
+        <div class="flex-row mt-4 row-gap-3 mb-4">
+          <div class="cardA">
+            <div class="cardA_side">
+              <div class="cardA_image cardA_child-image-1">
+                &nbsp;
+              </div>
+              <div class="cardA_details mx-auto">
+                <ul class="d-inline-block px-2">
+                  <li data-lang="child_list_item_1">Uyku Sorunları</li>
+                  <li data-lang="child_list_item_2">Yeme Sorunları</li>
+                  <li data-lang="child_list_item_3">Gelişim Sorunları</li>
+                  <li data-lang="child_list_item_4">Anne-Baba-Çocuk İletişim Sorunları</li>
+                  <li data-lang="child_list_item_5">Davranım Bozuklukları</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cardA">
+            <div class="cardA_side">
+              <div class="cardA_image cardA_child-image-2">
+                &nbsp;
+              </div>
+              <div class="cardA_details mx-auto">
+                <ul class="d-inline-block px-2">
+                  <li data-lang="child_list_item_6">Arkadaş İlişkileri İle İlgili Sorunlar</li>
+                  <li data-lang="child_list_item_7">Kardeş Kıskançlığı</li>
+                  <li data-lang="child_list_item_8">Dikkat ve Hiperaktivite Bozukluğu</li>
+                  <li data-lang="child_list_item_9">Okul ya da Akademik Konular İle İlgili Sorunlar</li>
+                  <li data-lang="child_list_item_10">Öğrenme Güçlüğü</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cardA ">
+            <div class="cardA_side">
+              <div class="cardA_image cardA_child-image-3">
+                &nbsp;
+              </div>
+              <div class="cardA_details mx-auto">
+                <ul class="d-inline-block px-2">
+                  <li data-lang="child_list_item_11">Öfke ve Korkular</li>
+                  <li data-lang="child_list_item_12">Alt Islatma, Dışkı kaçırma, Tikler</li>
+                  <li data-lang="child_list_item_13">Travma, Kayıp, Yas Süreci</li>
+                  <li data-lang="child_list_item_14">Çocukluk Çağı Depresyon ve Kaygı Bozuklukları</li>
+                  <li data-lang="child_list_item_15">Evlenme-Boşanmaya Bağlı Gelişen Sorunlar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p data-lang="child_drawing_info_1">
+          3-11 yaş çocukları ile kendilerini daha iyi ifade edebilecekleri yöntemler kullanılarak iletişim kurmak
+          gereklidir.
+          Bu dönemde çocuğun iç dünyasının analiz edilmesi çizdiği resimler yoluyla kolayca mümkün olmaktadır. Bu
+          çizimler sonucunda çocuğun ihtiyaçları belirlenebilmektedir.
+
+        </p>
+
+        <h4 class="mt-3" data-lang="teenager_section_sub_title">Ergen Therapisi</h4>
+
+        <!--Teenager Cards-->
+        <div class="flex-row mt-4 row-gap-3">
+          <div class="cardA">
+            <div class="cardA_side">
+              <div class="cardA_image cardA_teenager-image-1">
+                &nbsp;
+              </div>
+              <div class="cardA_details mx-auto">
+                <ul class="d-inline-block px-2">
+                  <li data-lang="teenager_list_item_1">Aileyle İlişki Sorunları</li>
+                  <li data-lang="teenager_list_item_2">Uyum Sorunları</li>
+                  <li data-lang="teenager_list_item_3">Arkadaş İlişkileri İle İlgili sorunlar</li>
+                  <li data-lang="teenager_list_item_4">Karşı Cinsle İlgili Konular</li>
+                  <li data-lang="teenager_list_item_5">Okul ve Akademik Konular İle İlgili Sorunlar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cardA">
+            <div class="cardA_side">
+              <div class="cardA_image cardA_teenager-image-2">
+                &nbsp;
+              </div>
+              <div class="cardA_details mx-auto">
+                <ul class="d-inline-block px-2">
+                  <li data-lang="teenager_list_item_6">Kaygı, Korku ve Öfke Sorunları</li>
+                  <li data-lang="teenager_list_item_7">Ergenlik ve Gelişim İle İlgili Sorunlar</li>
+                  <li data-lang="teenager_list_item_8">Travma, Depresyon ve Kimlik Bunalımı</li>
+                  <li data-lang="teenager_list_item_9">Özgüven Kaybı İle İlgili Sorunlar</li>
+                  <li data-lang="teenager_list_item_10">Bağımlılık</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="section-consult-adult" class="min-vh-100 section-color-1 py-6">
+
+      <h2 data-lang="navigation_text_3">Beratung für Erwachsene</h2>
+
+      <!--Adult Cards-->
+      <div class="flex-row mt-4 row-gap-3">
+        <div class="cardA">
+          <div class="cardA_side">
+            <div class="cardA_image cardA_adult-image-1">
+              &nbsp;
+            </div>
+            <div class="cardA_details mx-auto">
+              <ul class="d-inline-block px-2">
+                <li data-lang="adult_list_item_1">Depresyon</li>
+                <li data-lang="adult_list_item_2">Kaygı Bozuklukları</li>
+                <li data-lang="adult_list_item_3">Panik Atak</li>
+                <li data-lang="adult_list_item_4">Sosyal Fobi</li>
+                <li data-lang="adult_list_item_5">İlişki Sorunları</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cardA">
+          <div class="cardA_side">
+            <div class="cardA_image cardA_adult-image-2">
+              &nbsp;
+            </div>
+            <div class="cardA_details mx-auto">
+              <ul class="d-inline-block px-2">
+                <li data-lang="adult_list_item_6">Uyku Bozuklukları</li>
+                <li data-lang="adult_list_item_7">Yeme Bozuklukları</li>
+                <li data-lang="adult_list_item_8">Öfke Problemleri</li>
+                <li data-lang="adult_list_item_9">Obsesif Kompulsif Bozukluk</li>
+                <li data-lang="adult_list_item_10">Travma ve Stres Bağlantılı Bozukluk</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cardA">
+          <div class="cardA_side">
+            <div class="cardA_image cardA_adult-image-3">
+              &nbsp;
+            </div>
+            <div class="cardA_details mx-auto">
+              <ul class="d-inline-block px-2">
+                <li data-lang="adult_list_item_11">Psikosomatik Bozukluklar</li>
+                <li data-lang="adult_list_item_12">Psikotik Bozukluklar</li>
+                <li data-lang="adult_list_item_13">İş-Özel Yaşam Dengesi ve Sosyal Sorunlar</li>
+                <li data-lang="adult_list_item_14">Duygu ve Duygulanım Sorunları, Mutsuzluk</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="section-consult-family" class="min-vh-100 section-color-3 py-6">
+
+      <h2 data-lang="navigation_text_4">Beratung für Familien</h2>
+
+      <div class="flex-row mt-4 row-gap-3">
+        <div class="cardA">
+          <div class="cardA_side">
+            <div class="cardA_image cardA_family-image-1">
+              &nbsp;
+            </div>
+            <div class="cardA_details mx-auto">
+              <ul class="d-inline-block px-2">
+                <li data-lang="family_list_item-1">Aile İçerisinde İlişki ve İletişim Sorunları</li>
+                <li data-lang="family_list_item-2">Sosyal İlişkilerde Yaşanan Sorunlar</li>
+                <li data-lang="family_list_item-3">Nişanlılık, Evlilik ve Boşanma Konuları İle İlgili Sorunlar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="section-game-therapy" class="min-vh-100 section-color-1 py-6">
+      <article>
+        <h2 data-lang="navigation_text_5">Spieltherapie</h2>
+        <p data-lang="game_therapy_info_1">Oyun; çocuğun kendini ifade etmesi, hayal ile gerçek arasında bir köprü,
+          gizli
+          enerjinin kullanılması, çocuğun sosyal ve ahlaki değerleri öğrendiği bir alandır.</p>
+      </article>
+
+
+
+    </section>
+
+    <section id="section-contact" class="min-vh-100 section-color-3 py-6">
+      <h2 class="mb-3 mt-5" data-lang="contact_section_title">Wenn Sie uns kontaktieren wollen!</h2>
+
+      <div class="flex-row mb-3">
+        <ul class="social-icons">
+          <li class="mr-2"><a href="" class="social-icon"> <i class="fa fa-facebook  fa-4x pl-2 pr-2"></i></a>
+          </li>
+          <li class="mr-2"><a href="" class="social-icon"> <i class="fa fa-twitter fa-4x"></i></a></li>
+
+          <li class="mr-2"><a href="" class="social-icon"> <i class="fa fa-youtube fa-4x"></i></a></li>
+          <li><a href="https://www.instagram.com/psikolog.firatturan/" class="social-icon"> <i
+                class="fa fa-instagram fa-4x"></i></a></li>
+        </ul>
+      </div>
+
+
+      <div class="flex-row mt-5">
+        <div class="w-30">
+          <h3>Adress</h3>
+          <p class="mt-3">Mittelseestraße 48 <br>63065 <br>Offenbach am Main</p>
+        </div>
+        <div class="w-30">
+          <h3>Email</h3>
+          <p class="mt-3"><a href="mailto:firatturan@web.de">firatturan@web.de</a></p>
+        </div>
+        <div class="w-30">
+          <h3>Telefon</h3>
+          <p class="mt-3">+49 (173) 599 40 40</p>
+
+          <div class="flex-row">
+            <!--<a style=" font-size: 20px;" href="https://wa.me/491735994040">Send Message</a> -->
+
+
+
+            <!--<a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+              class="float" target="_blank">
+              <i class="fa fa-whatsapp my-float"></i>
+            </a>-->
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <p class="mt-5"><iframe id="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.128136843974!2d8.759641616176436!3d50.10260852024749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0e07031b7e61%3A0x6d25f0bbde8ee14a!2sMittelseestra%C3%9Fe%2048%2C%2063065%20Offenbach%20am%20Main!5e0!3m2!1sen!2sde!4v1670274835724!5m2!1sen!2sde"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </section>
+  </div>
+  <a href="https://wa.me/491735994040" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+</body>
+
+</html>
