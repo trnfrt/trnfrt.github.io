@@ -9,7 +9,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 
@@ -18,7 +18,17 @@ h4 {
   text-align: center;
 }
 
-p {
+h5 {
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* p {
   font-size: 1.7rem;
   margin-bottom: 1rem;
   line-height: 3rem;
@@ -28,4 +38,13 @@ p {
   font-size: 1.8em;
   text-align: center;
   line-height: 2rem;
+} */
+
+p {
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 2rem;
+}
+.mail-text a {
+  font-size: 1.7rem;
 }

@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
 
 body {
   font-family: poppins, sans-serif;
@@ -319,11 +319,88 @@ ul.social-icons {
 
 /*Start Google Maps*/
 
-#contact-map {
-  width: 90%;
-  height: 40rem;
+.time-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1rem 3rem;
 }
 
+.hour-img {
+  width: 4rem;
+  margin-bottom: -2rem;
+}
+
+.contact-maps-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0 3rem;
+}
+
+.time-card-wrapper {
+  flex: 1;
+}
+
+.time-item {
+  flex: 1;
+  display: flex;
+  border: 2px solid #023423;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: #086c4a;
+  min-height: 13rem;
+  margin-bottom: 1rem;
+}
+
+.time-item time {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.contact-map-card {
+  flex: 1;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.contact-map {
+  display: inline-block;
+  height: 40rem;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.contact-map-card .weekdays {
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.contact-map-card .time-period {
+  border: 2px solid #086c4a;
+  background-color: #fff;
+  color: #086c4a;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.day-item.open-day {
+  background-color: #086c4a;
+  color: #fff;
+}
+
+.day-item {
+  /* border: 1px solid black; */
+  min-width: 6rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  background-color: #b9b9b9;
+  color: #8a8585;
+}
 /*End Google Maps*/
 
 .cardA {
