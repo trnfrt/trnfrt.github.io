@@ -19,6 +19,10 @@
   margin: 0 2rem;
 }
 
+.d-none {
+  display: none;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;

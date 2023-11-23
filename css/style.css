@@ -374,7 +374,7 @@ ul.social-icons {
 }
 
 .contact-map-card .weekdays {
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
   margin: 1rem 0;
 }
@@ -394,12 +394,13 @@ ul.social-icons {
 
 .day-item {
   /* border: 1px solid black; */
-  min-width: 6rem;
+  min-width: 8rem;
   padding: 1rem;
   border-radius: 0.5rem;
-
   background-color: #b9b9b9;
   color: #8a8585;
+  font-size: 1.4rem;
+  text-align: center;
 }
 /*End Google Maps*/
 
