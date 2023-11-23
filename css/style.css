@@ -421,10 +421,16 @@ ul.social-icons {
 .cardA_details li {
   font-size: 1.45rem;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.cardA_details li::first-letter {
+  font-weight: bolder;
+  letter-spacing: 1.5px;
 }
 
 .cardA_side {
-  height: 50rem;
+  min-height: 50rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
