@@ -12,7 +12,11 @@
   <link rel="stylesheet" href="css/media-queries.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+  <!--Start Seo Fix-->
+  <meta name="description"
+    content="Discover compassionate counseling for individuals, families, and adolescents. Our experts help you navigate life's challenges, promoting emotional well-being and mental health. Contact us for trusted guidance and support today.">
+  <meta name="robots" content="index,follow" />
+  <!--End Seo Fix-->
 
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/main.js"></script>
@@ -74,7 +78,8 @@
 
       <div class="mobile-nav">
         <div class="menu-icon-container">
-          <a href="javascript:void(0);" onclick="toggleMobileMenu()">
+          <!-- If the link is not intended for SEO purposes and is solely for interactive functionality, you can instruct search engines not to index or follow it by adding rel="nofollow" and rel="noindex" -->
+          <a href="javascript:void(0);" onclick="toggleMobileMenu()" rel="nofollow" noindex>
             <img class="menu-icon" src="images/icons/menu/menu-three-lines.svg" alt="german flag">
           </a>
         </div>
