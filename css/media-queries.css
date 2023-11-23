@@ -239,6 +239,11 @@
     background-color: #d9ead3;
   }
 
+  .menu-icon-container button {
+    border: none;
+    background-color: #d9ead3;
+  }
+
   .site-language {
     order: 0;
   }
