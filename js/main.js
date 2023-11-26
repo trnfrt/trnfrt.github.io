@@ -128,4 +128,5 @@ function updateTranslations() {
   $("[data-lang=contact_by_social_media_text]").text(
     language.contact_by_social_media_text
   );
+  $("[data-lang=address_title]").text(language.address_title);
 }
