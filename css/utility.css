@@ -19,6 +19,10 @@
   margin: 0 2rem;
 }
 
+.txt-center {
+  text-align: center;
+}
+
 .d-none {
   display: none;
 }

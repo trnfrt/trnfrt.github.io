@@ -88,7 +88,6 @@ function updateTranslations() {
   $("[data-lang=child_list_item_12]").text(language.child_list_item_12);
   $("[data-lang=child_list_item_13]").text(language.child_list_item_13);
   $("[data-lang=child_list_item_14]").text(language.child_list_item_14);
-  $("[data-lang=child_list_item_15]").text(language.child_list_item_15);
   $("[data-lang=child_drawing_info_1]").text(language.child_drawing_info_1);
   $("[data-lang=teenager_section_sub_title]").text(
     language.teenager_section_sub_title
@@ -112,14 +111,21 @@ function updateTranslations() {
   $("[data-lang=adult_list_item_7]").text(language.adult_list_item_7);
   $("[data-lang=adult_list_item_8]").text(language.adult_list_item_8);
   $("[data-lang=adult_list_item_9]").text(language.adult_list_item_9);
-  $("[data-lang=adult_list_item_10]").text(language.adult_list_item_10);
-  $("[data-lang=adult_list_item_11]").text(language.adult_list_item_11);
-  $("[data-lang=adult_list_item_12]").text(language.adult_list_item_12);
-  $("[data-lang=adult_list_item_13]").text(language.adult_list_item_13);
-  $("[data-lang=adult_list_item_14]").text(language.adult_list_item_14);
   $("[data-lang=family_list_item_1]").text(language.family_list_item_1);
   $("[data-lang=family_list_item_2]").text(language.family_list_item_2);
   $("[data-lang=family_list_item_3]").text(language.family_list_item_3);
   $("[data-lang=game_therapy_info_1]").text(language.game_therapy_info_1);
   $("[data-lang=home_greeting_text]").text(language.home_greeting_text);
+  $("[data-lang=weekday_1]").text(language.weekday_1);
+  $("[data-lang=weekday_2]").text(language.weekday_2);
+  $("[data-lang=weekday_3]").text(language.weekday_3);
+  $("[data-lang=weekday_4]").text(language.weekday_4);
+  $("[data-lang=weekday_5]").text(language.weekday_5);
+  $("[data-lang=weekday_6]").text(language.weekday_6);
+  $("[data-lang=weekday_7]").text(language.weekday_7);
+  $("[data-lang=office1_openning_info]").text(language.office1_openning_info);
+  $("[data-lang=office2_openning_info]").text(language.office2_openning_info);
+  $("[data-lang=contact_by_social_media_text]").text(
+    language.contact_by_social_media_text
+  );
 }
