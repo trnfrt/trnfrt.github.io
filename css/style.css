@@ -503,6 +503,12 @@ ul.social-icons {
   background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
 }
 
+.cardA_game-image-1 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #bc1487),
+    url(../images/sample-image/childWithPlane.jpg);
+  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+}
+
 /*
  cards
 */
