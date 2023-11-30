@@ -10,6 +10,11 @@
   background-color: #c7e5e2;
 }
 
+.flxc {
+  display: flex;
+  justify-content: center;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -103,6 +108,14 @@
 
 .w-10 {
   width: 10%;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding-top: 0rem;
 }
 
 .pt-05 {

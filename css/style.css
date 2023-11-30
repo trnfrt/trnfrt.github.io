@@ -108,6 +108,15 @@ article {
   margin: 0px auto;
 }
 
+#section-consult-child article {
+  width: 100vw;
+  max-width: 100vw;
+}
+
+#section-consult-child .sub-section-teen {
+  padding-bottom: 10rem;
+}
+
 li {
   font-size: 1.5em;
   text-align: left;
@@ -415,23 +424,23 @@ ul.social-icons {
   display: inline-block;
 }
 
-.cardA_details {
+.card-details {
   text-align: center;
   padding-top: 3rem;
 }
 
-.cardA_details li {
+.card-details li {
   font-size: 1.45rem;
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
 
-.cardA_details li::first-letter {
+.card-details li::first-letter {
   font-weight: bolder;
   letter-spacing: 1.5px;
 }
 
-.cardA_side {
+.card_side {
   min-height: 50rem;
   transition: all 0.8s ease;
   position: absolute;
@@ -445,68 +454,62 @@ ul.social-icons {
   background-color: #fff;
 }
 
-.cardA_image {
+.card-polygon {
   background-size: cover;
   height: 30rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
-
-.cardA_child-image-1 {
-  background-image: linear-gradient(to right bottom, #ffbb00, #ff7730),
-    url(../images/sample-image/childWithCars-3x2.jpg);
-  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+.card-polygon img {
+  width: 100%;
+  border-radius: 0;
 }
 
-.cardA_child-image-2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-    url(../images/sample-image/childWithDrawing-3x2.jpg);
-  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.3; /* You can adjust the opacity as desired */
 }
 
-.cardA_child-image-3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-    url(../images/sample-image/childWithTeddyBear-3x2.jpg);
+.color-overlay-child-A {
+  background: linear-gradient(to right bottom, #ffbb00, #ff7730);
 }
 
-.cardA_teenager-image-1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-    url(../images/sample-image/youngs1.jpg);
-  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+.color-overlay-child-B {
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
-.cardA_teenager-image-2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-    url(../images/sample-image/youngSad1.jpg);
-  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+.color-overlay-child-C {
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
-.cardA_adult-image-1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-    url(../images/sample-image/adultTherapy1.jpg);
-  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+.color-overlay-teenager-A {
+  background: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 
-.cardA_adult-image-2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-    url(../images/sample-image/adultTherapy2.jpg);
-}
-.cardA_adult-image-3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-    url(../images/sample-image/adultTherapy3.jpg);
+.color-overlay-teenager-B {
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
-.cardA_family-image-1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-    url(../images/sample-image/family1.jpg);
-  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+.color-overlay-adult-A {
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
-.cardA_game-image-1 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #bc1487),
-    url(../images/sample-image/childWith-plane.jpg);
-  background: radial-gradient(ellipse at bottom left, 20%, transparent 20%);
+.color-overlay-adult-B {
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.color-overlay-family-A {
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.color-overlay-gameTherapy-A {
+  background: linear-gradient(to right bottom, #7ed56f, #bc1487);
 }
 
 /*
