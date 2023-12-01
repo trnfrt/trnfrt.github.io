@@ -16,6 +16,7 @@ body {
 
 #main-nav {
   display: flex;
+  column-gap: 2rem;
   width: 100%;
   margin: 0 auto;
   z-index: 2;
@@ -28,7 +29,7 @@ body {
 .nav-links {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   align-self: center;
 }
 
@@ -50,8 +51,9 @@ nav a {
 }
 
 .site-language {
-  display: inline;
-  width: 20%;
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 10%;
   order: 2;
 }
 
@@ -101,12 +103,12 @@ section#section-consult p {
   text-align: left;
 }
 
-article {
+/* article {
   width: 90vw;
   max-width: 90vw;
   padding: 20px;
   margin: 0px auto;
-}
+} */
 
 #section-consult-child article {
   width: 100%;
@@ -282,6 +284,28 @@ ul.social-icons {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
+.float-wp {
+  position: fixed;
+  width: 6rem;
+  height: 6rem;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
 /*End Social Media Icons*/
 
 /*Start Google Maps*/
@@ -377,7 +401,7 @@ ul.social-icons {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  min-height: 52rem;
   width: 45rem;
   display: inline-block;
 }
