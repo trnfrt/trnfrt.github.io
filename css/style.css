@@ -12,6 +12,10 @@ body {
   margin: 0px;
   max-width: 100%;
   overflow-x: hidden;
+  background-image: url("../images/sky.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #main-nav {
@@ -73,12 +77,9 @@ nav a {
 
 #layout-container {
   width: 90vw;
+  max-width: 140rem;
   margin: 0 auto;
   overflow-x: hidden;
-  background-image: url("../images/sky.jpg"), linear-gradient(#eb01a5, #d13531);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 section {
