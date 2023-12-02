@@ -1,0 +1,345 @@
+// rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+
+  .time-container,
+  .contact-maps-container {
+    flex-direction: column;
+  }
+
+  /* .hour-img {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 84em) {
+  #layout-container {
+    width: 100vw;
+  }
+
+  .cardA_child-image-1 {
+    background-image: linear-gradient(to right bottom, #ffbb00, #ff7730),
+      url(../images/sample-image/mobile/childWithCars-900x600-mobile.jpg);
+  }
+
+  .cardA_child-image-2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/childWithDrawing-900x600-mobile.jpg);
+  }
+
+  .cardA_child-image-3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+      url(../images/sample-image/mobile/childWithTeddyBear-900x600-mobile.jpg);
+  }
+
+  .cardA_teenager-image-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/youngs1-900x600-mobile.jpg);
+  }
+
+  .cardA_teenager-image-2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/youngSad1-900x600-mobile.jpg);
+  }
+
+  .cardA_adult-image-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/adultTherapy1-900x600-mobile.jpg);
+  }
+
+  .cardA_adult-image-2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/adultTherapy2-900x600-mobile.jpg);
+  }
+  .cardA_adult-image-3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+      url(../images/sample-image/mobile/adultTherapy3-900x600-mobile.jpg);
+  }
+
+  .cardA_family-image-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/family1-900x600-mobile.jpg);
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .cardA {
+    min-width: 45rem;
+  }
+
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .cardA {
+    min-width: 45rem;
+  }
+
+  nav a:first-child {
+    margin-left: 0px;
+  }
+
+  nav a {
+    margin: 0px 15px;
+  }
+
+  .flxc-md-4 {
+    flex: 0 0 calc(25% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-md-3 {
+    flex: 0 0 calc(33.33% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-md-2 {
+    flex: 0 0 calc(50% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-md-1 {
+    flex: 0 0 calc(100% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+  .float-wp {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .flxc-sm-4 {
+    flex: 0 0 calc(25% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .cardA {
+    width: 100%;
+    margin: 2rem;
+    min-width: 42rem;
+  }
+
+  .flxc-sm-3 {
+    flex: 0 0 calc(33.33% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-sm-2 {
+    flex: 0 0 calc(50% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-sm-1 {
+    flex: 0 0 calc(100% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  p {
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+  }
+
+  li {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #5d84a7;
+    padding: 0;
+
+    div {
+      flex: 1 0 calc(50% - 5rem);
+    }
+    .mobile-nav {
+      display: inline-block;
+      width: 4rem;
+    }
+    a {
+      margin: 0;
+      float: right;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: black;
+      width: 100%;
+      padding: 3rem 1rem 2rem 1rem;
+    }
+    .site-language {
+      order: 0;
+    }
+  }
+
+  .menu-icon {
+    border-radius: 0;
+    width: 3rem;
+    float: left;
+    margin: 1rem;
+  }
+
+  .menu-icon-container {
+    float: left;
+    background-color: #d9ead3;
+  }
+
+  .menu-icon-container button {
+    border: none;
+    background-color: #d9ead3;
+  }
+
+  .language-flag {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+  .d-xs-none {
+    display: none !important;
+  }
+
+  .section-link {
+    margin-bottom: 2rem;
+  }
+
+  .flex-row {
+    margin: 0 0.2rem;
+  }
+
+  .flxc-xs-4 {
+    flex: 0 0 calc(25% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-xs-3 {
+    flex: 0 0 calc(33.33% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-xs-2 {
+    flex: 0 0 calc(50% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-xs-1 {
+    flex: 0 0 calc(100% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+}
+
+.card-polygon {
+  height: 27rem;
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}

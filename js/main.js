@@ -1,3 +1,61 @@
+var language;
+
+$(document).ready(function () {
+  // Start (Back/Forward Cache)
+  $(window).on("pageshow", function (event) {
+    // Check if the page is being loaded from the back/forward cache
+    if (event.originalEvent.persisted) {
+      // Page is being loaded from cache
+      // Add any additional logic you need for cached pages here
+      console.log("Page loaded from the back/forward cache");
+    } else {
+      // Page is being loaded as a fresh navigation
+      // Add your regular page initialization code here
+      console.log("Page loaded as a fresh navigation");
+    }
+  });
+  // End (Back/Forward Cache)
+
+  // Start initial Language setup
+  let langKey = localStorage.getItem("language");
+  if (langKey == null) {
+    changeLanguage("de");
+  } else {
+    changeLanguage(langKey);
+  }
+  // End initial Language setup
+
+  // Start mobile Nav
+  $(".section-link").click(function () {
+    toggleMobileMenu();
+  });
+
+  $(".mobile-nav-links a").click(function () {
+    toggleMobileMenu();
+  });
+  // End mobile Nav
+
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  var navbar = $("#main-nav");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.addClass("sticky");
+    } else {
+      navbar.removeClass("sticky");
+    }
+  }
+});
+
+function toggleMobileMenu() {
+  $(".nav-links").toggleClass("d-xs-none");
+  $(".nav-links").toggleClass("mobile-nav-links");
+}
+
 function changeLanguage(langKey) {
   //localStorage.getItem("language") == null ? setLanguage(langKey) : false;
   setLanguage(langKey);
