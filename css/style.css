@@ -136,7 +136,7 @@ li:last-child {
 
 img {
   border-radius: 1.5rem;
-  width: 75%;
+  /* width: 75%; */
 }
 
 .subject-container,
@@ -319,7 +319,7 @@ ul.social-icons {
 }
 
 .hour-img {
-  width: 4rem;
+  /* width: 4rem; */
   margin-bottom: -2rem;
 }
 
@@ -446,6 +446,7 @@ ul.social-icons {
 }
 .card-polygon img {
   width: 100%;
+  height: auto;
   border-radius: 0;
 }
 
