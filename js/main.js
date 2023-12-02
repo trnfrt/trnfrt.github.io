@@ -54,6 +54,7 @@ $(document).ready(function () {
 function toggleMobileMenu() {
   $(".nav-links").toggleClass("d-xs-none");
   $(".nav-links").toggleClass("mobile-nav-links");
+  $(".menu-icon").toggleClass("d-none");
 }
 
 function changeLanguage(langKey) {
