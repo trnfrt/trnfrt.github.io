@@ -1,4 +1,4 @@
-var language;
+let language;
 
 $(document).ready(function () {
   // Start (Back/Forward Cache)
@@ -39,11 +39,11 @@ $(document).ready(function () {
     myFunction();
   };
 
-  var navbar = $("#main-nav");
-  var sticky = navbar.offsetTop;
+  let navbar = $("#main-nav");
+  let sticky = navbar.offset().top;
 
   function myFunction() {
-    if (window.pageYOffset >= sticky) {
+    if (window.scrollY >= sticky) {
       navbar.addClass("sticky");
     } else {
       navbar.removeClass("sticky");
@@ -58,6 +58,7 @@ function toggleMobileMenu() {
 }
 
 function changeLanguage(langKey) {
+
   //localStorage.getItem("language") == null ? setLanguage(langKey) : false;
   setLanguage(langKey);
   language = localStorage.getItem("language");

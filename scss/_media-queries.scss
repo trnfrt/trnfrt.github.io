@@ -10,82 +10,11 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    font-size: 14px;
-  }
-
-  .time-container,
-  .contact-maps-container {
-    flex-direction: column;
-  }
-
-  /* .hour-img {
-    display: none;
-  } */
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 84em) {
-  #layout-container {
-    width: 100vw;
-  }
-
-  .cardA_child-image-1 {
-    background-image: linear-gradient(to right bottom, #ffbb00, #ff7730),
-      url(../images/sample-image/mobile/childWithCars-900x600-mobile.jpg);
-  }
-
-  .cardA_child-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-      url(../images/sample-image/mobile/childWithDrawing-900x600-mobile.jpg);
-  }
-
-  .cardA_child-image-3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-      url(../images/sample-image/mobile/childWithTeddyBear-900x600-mobile.jpg);
-  }
-
-  .cardA_teenager-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-      url(../images/sample-image/mobile/youngs1-900x600-mobile.jpg);
-  }
-
-  .cardA_teenager-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-      url(../images/sample-image/mobile/youngSad1-900x600-mobile.jpg);
-  }
-
-  .cardA_adult-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-      url(../images/sample-image/mobile/adultTherapy1-900x600-mobile.jpg);
-  }
-
-  .cardA_adult-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-      url(../images/sample-image/mobile/adultTherapy2-900x600-mobile.jpg);
-  }
-  .cardA_adult-image-3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-      url(../images/sample-image/mobile/adultTherapy3-900x600-mobile.jpg);
-  }
-
-  .cardA_family-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-      url(../images/sample-image/mobile/family1-900x600-mobile.jpg);
-  }
-}
-
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 
-@media (max-width: 75em) {
+@media (max-width: 1200px) {
   html {
     /* 9px / 16px  */
     font-size: 56.25%;
@@ -104,7 +33,7 @@
 /* BELOW 944px (Tablets) */
 /**************************/
 
-@media (max-width: 59em) {
+@media (max-width: 944px) {
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
@@ -152,58 +81,26 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+
+  .time-container,
+  .contact-maps-container {
+    flex-direction: column;
+  }
+
+  /* .hour-img {
+    display: none;
+  } */
+}
+
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 
-@media (max-width: 44em) {
-  .flxc-sm-4 {
-    flex: 0 0 calc(25% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
-    margin: 1rem;
-  }
-
-  .cardA {
-    width: 100%;
-    margin: 2rem;
-    min-width: 42rem;
-  }
-
-  .flxc-sm-3 {
-    flex: 0 0 calc(33.33% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
-    margin: 1rem;
-  }
-
-  .flxc-sm-2 {
-    flex: 0 0 calc(50% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
-    margin: 1rem;
-  }
-
-  .flxc-sm-1 {
-    flex: 0 0 calc(100% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
-    margin: 1rem;
-  }
-}
-
-/**************************/
-/* BELOW 544px (Phones) */
-/**************************/
-
-@media (max-width: 34em) {
-  p {
-    font-size: 1.7rem;
-    line-height: 3.2rem;
-    font-weight: 500;
-  }
-
-  li {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
-
-  section {
-    max-width: 100%;
-  }
-
+@media (max-width: 750px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -269,6 +166,109 @@
 
   .section-link {
     margin-bottom: 2rem;
+  }
+
+  .flxc-sm-4 {
+    flex: 0 0 calc(25% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .cardA {
+    // width: 50%;
+    margin: 2rem;
+    min-width: 42rem;
+  }
+
+  .flxc-sm-3 {
+    flex: 0 0 calc(33.33% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-sm-2 {
+    flex: 0 0 calc(50% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+
+  .flxc-sm-1 {
+    flex: 0 0 calc(100% - 5rem); /* flex-grow: , flex-shrink:   , flex-basis: */
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  #layout-container {
+    width: 100vw;
+  }
+
+  .cardA_child-image-1 {
+    background-image: linear-gradient(to right bottom, #ffbb00, #ff7730),
+      url(../images/sample-image/mobile/childWithCars-900x600-mobile.jpg);
+  }
+
+  .cardA_child-image-2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/childWithDrawing-900x600-mobile.jpg);
+  }
+
+  .cardA_child-image-3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+      url(../images/sample-image/mobile/childWithTeddyBear-900x600-mobile.jpg);
+  }
+
+  .cardA_teenager-image-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/youngs1-900x600-mobile.jpg);
+  }
+
+  .cardA_teenager-image-2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/youngSad1-900x600-mobile.jpg);
+  }
+
+  .cardA_adult-image-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/adultTherapy1-900x600-mobile.jpg);
+  }
+
+  .cardA_adult-image-2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/adultTherapy2-900x600-mobile.jpg);
+  }
+  .cardA_adult-image-3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+      url(../images/sample-image/mobile/adultTherapy3-900x600-mobile.jpg);
+  }
+
+  .cardA_family-image-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/family1-900x600-mobile.jpg);
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 544px) {
+  p {
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+  }
+
+  li {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  section {
+    max-width: 100%;
   }
 
   .flex-row {
