@@ -21,7 +21,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   -moz-column-gap: 3rem;
-       column-gap: 3rem;
+  column-gap: 3rem;
   justify-content: space-around;
   margin: 0 2rem;
 }
@@ -461,7 +461,7 @@ section {
 nav {
   display: flex;
   -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   width: 100%;
   background-color: #415a76;
   padding: 10px;
@@ -602,7 +602,14 @@ img {
 
 .icon-instagram:hover {
   background: #f09433;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
 }
 
@@ -678,7 +685,7 @@ img {
 }
 
 .contact-map-card .weekdays {
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
   margin: 1rem 0;
 }
@@ -987,31 +994,40 @@ img {
     width: 100vw;
   }
   .cardA_child-image-1 {
-    background-image: linear-gradient(to right bottom, #ffbb00, #ff7730), url(../images/sample-image/mobile/childWithCars-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffbb00, #ff7730),
+      url(../images/sample-image/mobile/childWithCars-900x600-mobile.jpg);
   }
   .cardA_child-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/sample-image/mobile/childWithDrawing-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/childWithDrawing-900x600-mobile.jpg);
   }
   .cardA_child-image-3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/sample-image/mobile/childWithTeddyBear-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+      url(../images/sample-image/mobile/childWithTeddyBear-900x600-mobile.jpg);
   }
   .cardA_teenager-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../images/sample-image/mobile/youngs1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/youngs1-900x600-mobile.jpg);
   }
   .cardA_teenager-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/sample-image/mobile/youngSad1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/youngSad1-900x600-mobile.jpg);
   }
   .cardA_adult-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../images/sample-image/mobile/adultTherapy1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/adultTherapy1-900x600-mobile.jpg);
   }
   .cardA_adult-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/sample-image/mobile/adultTherapy2-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+      url(../images/sample-image/mobile/adultTherapy2-900x600-mobile.jpg);
   }
   .cardA_adult-image-3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/sample-image/mobile/adultTherapy3-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+      url(../images/sample-image/mobile/adultTherapy3-900x600-mobile.jpg);
   }
   .cardA_family-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../images/sample-image/mobile/family1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../images/sample-image/mobile/family1-900x600-mobile.jpg);
   }
 }
 /**************************/
@@ -1097,4 +1113,4 @@ img {
 
 .no-flexbox-gap .footer-nav li:not(:last-child) {
   margin-bottom: 2.4rem;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
