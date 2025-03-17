@@ -1,528 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="#" />
-  <!-- <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/utility.css">
-  <link rel="stylesheet" href="css/typography.css">
-  <link rel="stylesheet" href="css/media-queries.css"> -->
-
-  <!-- <link rel="stylesheet" href="css/main-min.css"> -->
-  <link rel="stylesheet" href="css/main.css">
-
-  <!--Start Seo Fix-->
-  <meta name="description"
-    content="Discover compassionate counseling for individuals, families, and adolescents. Our experts help you navigate life's challenges, promoting emotional well-being and mental health. Contact us for trusted guidance and support today.">
-  <meta name="robots" content="index,follow" />
-  <!--End Seo Fix-->
-
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/main.js"></script>
-  <!-- <script>
-    var language;
-
-    $(document).ready(function () {
-      let langKey = localStorage.getItem("language");
-      if (langKey == null) {
-        changeLanguage("de");
-      }
-      else {
-        changeLanguage(langKey);
-      }
-
-      $(".section-link").click(function () {
-        toggleMobileMenu();
-      });
-
-      $(".mobile-nav-links a").click(function () {
-        toggleMobileMenu();
-      });
-
-      window.onscroll = function () { myFunction() };
-
-      var navbar = $("#main-nav");
-      var sticky = navbar.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.addClass("sticky")
-        } else {
-          navbar.removeClass("sticky");
-        }
-      }
-
-    });
-
-
-    function toggleMobileMenu() {
-      $(".nav-links").toggleClass("d-xs-none");
-      $(".nav-links").toggleClass("mobile-nav-links")
+  <title>Wartungsarbeiten</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 50px;
     }
-  </script> -->
-  <title>Praxis für Psychologische Beratung</title>
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #dc3545;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #dc3545;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
-<!--Mobile ekranda calismiyor-->
-
 <body>
-  <div id="layout-container">
-    <section id="header" class="pt-3">
-      <h2 data-lang="job_title">Psikolojik Danışman</h2>
-    </section>
-
-    <nav id="main-nav">
-
-      <div class="mobile-nav">
-        <div class="menu-icon-container">
-          <!-- If the link is not intended for SEO purposes and is solely for interactive functionality, you can instruct search engines not to index or follow it by adding rel="nofollow" and rel="noindex" -->
-          <!-- <a href="javascript:void(0);" onclick="toggleMobileMenu()" rel="nofollow" noindex>
-            <img class="menu-icon" src="images/icons/menu/menu-three-lines.svg" alt="german flag">
-          </a> -->
-          <button onclick="toggleMobileMenu()">
-            <img class="menu-icon" src="images/icons/menu/menu-three-lines.svg" alt="menu icon" width="24px"
-              height="24px">
-            <img class="menu-icon d-none" src="images/icons/menu/menu-close.svg" alt="german flag" width="24px"
-              height="24px">
-          </button>
-        </div>
-      </div>
-      <div class="site-language">
-        <a href="javascript:void(0);" class="language-flag icon-de mx-1" onclick="changeLanguage('de')">
-          <img class="language-icon" src="images/icons/flags/flag-germany.svg" alt="german flag">
-        </a>
-        <a href="javascript:void(0);" class="language-flag icon-tr ml-1 mr-2" onclick="changeLanguage('tr')">
-          <img class="language-icon" src="images/icons/flags/flag-turkey.svg" alt="turkish flag">
-        </a>
-      </div>
-      <div class="nav-links d-xs-none">
-
-        <a data-lang="navigation_text_1" class="section-link" href="#section-about">Über uns</a>
-
-        <a data-lang="navigation_text_2" class="section-link" href="#section-consult-child">Beratung für Kinder und
-          Jugendliche</a>
-
-        <a data-lang="navigation_text_3" class="section-link" href="#section-consult-adult">Beratung für Erwachsene</a>
-
-        <a data-lang="navigation_text_4" class="section-link" href="#section-consult-family">Beratung für Familien</a>
-
-        <a data-lang="navigation_text_5" class="section-link" href="#section-game-therapy">Spieltherapie</a>
-
-        <a data-lang="navigation_text_6" class="section-link" href="#section-contact">Kontakt</a>
-      </div>
-
-
-    </nav>
-
-    <section id="section-header2" class="min-vh-100">
-      <header class="mb-2 px-">
-        <h1 class="mt-2 mb-4">Fırat Turan</h1>
-        <h2 data-lang="job_short_description">Yetiskin,Aile, Cocuk ve Ergen Psikolijik Danismanligi</h2>
-      </header>
-    </section>
-
-    <section id="section-about" class="section-color-1 py-6">
-      <div class="intro-container flex-row ">
-        <div class="flxc-lg-3 flxc-md-2 flxc-sm-1 flex-xs-1 ">
-
-          <picture class="flxc">
-            <source srcset="images/final-min/FiratWinter.webp" type="image/webp" />
-            <source srcset="images/final-min/FiratWinter.png" type="image/png" />
-
-            <img src="images/final-min/FiratWinter.jpg" alt="child" width="303" height="404" />
-          </picture>
-        </div>
-
-        <div class="header-text-box flxc-lg-2 flxc-md-1 flxc-sm-1 flex-xs-1 ">
-          <h3 class="mb-2" data-lang="welcome_title">Willkommen in meiner Privatpraxis für Psychotherapie und Beratung
-          </h3>
-          <p class="main-p" data-lang="home_greeting_text">Ben bir Psikolojık Danışman olarak dünyaya gelmedim. insan
-            olarak
-            varlığımı ve onun
-            anlamını keşfetmeye geldim. Bu keşif yolculuğum ise beni bu değerli meslekle buluşturdu. şimdi her şey çok
-            daha anlamlı. Çünkü; yolculuğumda ben insanların hayatına dokunmaya başladım ve bu çok özel.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="section-consult-child" class="min-vh-100 pt-0">
-      <article class="p-0">
-        <section class="sub-section-child section-color-3 py-6">
-          <h2 data-lang="navigation_text_2">Beratung für Kinder und
-            Jugendlich</h2>
-
-          <h3 class="mt-2 mb-2" data-lang="child_section_sub_title">Çocuk Danışmanlığı</h3>
-
-          <!--Child Cards-->
-          <div class="flex-row mt-4 row-gap-3 mb-4">
-            <div class="cardA">
-              <div class="card_side">
-                <div class="card-polygon">
-                  <picture>
-                    <source srcset="images/final-min/childWithCars-3x2.webp" type="image/webp" />
-                    <source srcset="images/final-min/childWithCars-3x2.png" type="image/png" />
-
-                    <img src="images/final-min/childWithCars-3x2.jpg" alt="child" width="640" height="360"
-                      loading="lazy" />
-                  </picture>
-                  <div class="color-overlay color-overlay-child-A"></div>
-                </div>
-                <div class="card-details mx-auto">
-                  <ul class="d-inline-block px-2">
-                    <li data-lang="child_list_item_1"></li>
-                    <li data-lang="child_list_item_2"></li>
-                    <li data-lang="child_list_item_3"></li>
-                    <li data-lang="child_list_item_4"></li>
-                    <li data-lang="child_list_item_5"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="cardA">
-              <div class="card_side">
-                <div class="card-polygon card_child-image-2">
-                  <picture>
-                    <source srcset="images/final-min/childWithDrawing-3x2.webp" type="image/webp" />
-                    <source srcset="images/final-min/childWithDrawing-3x2.png" type="image/png" />
-
-                    <img src="images/final-min/childWithDrawing-3x2.jpg" alt="child" width="450" height="300"
-                      loading="lazy" />
-                  </picture>
-                  <div class="color-overlay color-overlay-child-B"></div>
-                </div>
-                <div class="card-details mx-auto">
-                  <ul class="d-inline-block px-2">
-                    <li data-lang="child_list_item_6"></li>
-                    <li data-lang="child_list_item_7"></li>
-                    <li data-lang="child_list_item_8"></li>
-                    <li data-lang="child_list_item_9"></li>
-                    <li data-lang="child_list_item_10"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="cardA ">
-              <div class="card_side">
-                <div class="card-polygon">
-                  <picture>
-                    <source srcset="images/final-min/childWithTeddyBear-3x2.webp" type="image/webp" />
-                    <source srcset="images/final-min/childWithTeddyBear-3x2.png" type="image/png" />
-
-                    <img src="images/final-min/childWithTeddyBear-3x2.jpg" alt="child" width="450" height="300"
-                      loading="lazy" />
-                  </picture>
-                  <div class="color-overlay color-overlay-child-C"></div>
-                </div>
-                <div class="card-details mx-auto">
-                  <ul class="d-inline-block px-2">
-                    <li data-lang="child_list_item_11"></li>
-                    <li data-lang="child_list_item_12"></li>
-                    <li data-lang="child_list_item_13"></li>
-                    <li data-lang="child_list_item_14"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p class="px-2 main-p" data-lang="child_drawing_info_1">
-          </p>
-        </section>
-        <section class="sub-section-teen section-color-1 py-6">
-          <h4 class="mt-3" data-lang="teenager_section_sub_title"></h4>
-
-          <!--Teenager Cards-->
-          <div class="flex-row mt-4 row-gap-3">
-            <div class="cardA ">
-              <div class="card_side">
-                <div class="card-polygon">
-                  <picture>
-                    <source srcset="images/final-min/youngs1.webp" type="image/webp" />
-                    <source srcset="images/final-min/youngs1.png" type="image/png" />
-
-                    <img src="images/final-min/youngs1.jpg" alt="child" width="450" height="300" loading="lazy" />
-                  </picture>
-                  <div class="color-overlay color-overlay-teenager-A"></div>
-                </div>
-                <div class="card-details mx-auto">
-                  <ul class="d-inline-block px-2">
-                    <li data-lang="teenager_list_item_1"></li>
-                    <li data-lang="teenager_list_item_2"></li>
-                    <li data-lang="teenager_list_item_3"></li>
-                    <li data-lang="teenager_list_item_4"></li>
-                    <li data-lang="teenager_list_item_5"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!--final-->
-            <div class="cardA">
-              <div class="card_side">
-                <div class="card-polygon">
-                  <picture>
-                    <source srcset="images/final-min/youngSad1.webp" type="image/webp" />
-                    <source srcset="images/final-min/youngSad1.png" type="image/png" />
-
-                    <img src="images/final-min/youngSad1.jpg" alt="child" width="450" height="300" loading="lazy" />
-                  </picture>
-                  <div class="color-overlay color-overlay-teenager-B"></div>
-                </div>
-                <div class="card-details mx-auto">
-                  <ul class="d-inline-block px-2">
-                    <li data-lang="teenager_list_item_6"></li>
-                    <li data-lang="teenager_list_item_7"></li>
-                    <li data-lang="teenager_list_item_8"></li>
-                    <li data-lang="teenager_list_item_9"></li>
-                    <li data-lang="teenager_list_item_10"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-    </section>
-
-    <section id="section-consult-adult" class="min-vh-40 section-color-2 py-6">
-      <h2 data-lang="navigation_text_3"></h2>
-
-      <!--Adult Cards-->
-      <div class="flex-row mt-4 row-gap-3">
-        <div class="cardA">
-          <div class="card_side">
-            <div class="card-polygon">
-              <picture>
-                <source srcset="images/final-min/adultTherapy1.webp" type="image/webp" />
-                <source srcset="images/final-min/adultTherapy1.png" type="image/png" />
-
-                <img src="images/final-min/adultTherapy1.jpg" alt="child" width="450" height="300" loading="lazy" />
-              </picture>
-              <div class="color-overlay color-overlay-adult-A"></div>
-            </div>
-
-            <div class="card-details mx-auto">
-              <ul class="d-inline-block px-2">
-                <li data-lang="adult_list_item_1"></li>
-                <li data-lang="adult_list_item_2"></li>
-                <li data-lang="adult_list_item_3"></li>
-                <li data-lang="adult_list_item_4"></li>
-                <li data-lang="adult_list_item_5"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!--final-->
-        <div class="cardA">
-          <div class="card_side">
-            <div class="card-polygon">
-              <picture>
-                <source srcset="images/final-min/adultTherapy2.webp" type="image/webp" />
-                <source srcset="images/final-min/adultTherapy2.png" type="image/png" />
-                <img src="images/final-min/adultTherapy2.jpg" alt="child" width="450" height="300" loading="lazy" />
-              </picture>
-              <div class="color-overlay color-overlay-adult-B"></div>
-            </div>
-            <div class="card-details mx-auto">
-              <ul class="d-inline-block px-2">
-                <li data-lang="adult_list_item_6"></li>
-                <li data-lang="adult_list_item_7"></li>
-                <li data-lang="adult_list_item_8"></li>
-                <li data-lang="adult_list_item_9"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="section-consult-family" class="min-vh-40 section-color-3 py-6">
-
-      <h2 data-lang="navigation_text_4"></h2>
-
-      <div class="flex-row mt-4 row-gap-3">
-        <div class="cardA">
-          <div class="card_side">
-            <div class="card-polygon">
-              <picture>
-                <source srcset="images/final-min/family1.webp" type="image/webp" />
-                <source srcset="images/final-min/family1.png" type="image/png" />
-                <img src="images/final-min/family1.jpg" alt="child" width="450" height="300" loading="lazy" />
-              </picture>
-              <div class="color-overlay color-overlay-family-A"></div>
-            </div>
-            <div class="card-details mx-auto">
-              <ul class="d-inline-block px-2">
-                <li data-lang="family_list_item_1"></li>
-                <li data-lang="family_list_item_2"></li>
-                <li data-lang="family_list_item_3"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-    <section id="section-game-therapy" class="min-vh-40 section-color-1 py-6">
-      <article>
-        <h2 data-lang="navigation_text_5"></h2>
-        <!-- <p data-lang="game_therapy_info_1"></p> -->
-
-        <div class="flex-row mt-4 row-gap-3">
-          <div class="cardA">
-            <div class="card_side">
-              <div class="card-polygon">
-                <picture>
-                  <source srcset="images/final-min/childWith-plane.webp" type="image/webp" />
-                  <source srcset="images/final-min/childWith-plane.png" type="image/png" />
-                  <img src="images/final-min/childWith-plane.jpg" alt="child" width="450" height="300" loading="lazy" />
-                </picture>
-                <div class="color-overlay color-overlay-gameTherapy-A"></div>
-              </div>
-              <div class="card-details mx-auto">
-                <p class="px-2" data-lang="game_therapy_info_1"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section id="section-contact" class="min-vh-100 section-color-3 py-6">
-
-      <h2 class="mb-3 mt-5" data-lang="contact_section_title"></h2>
-
-
-      <div class="flex-row mt-5">
-        <div class="w-30">
-          <h3>Email</h3>
-          <p class="mt-3 mail-text"><a href="mailto:firatturan@web.de">firatturan@web.de</a></p>
-        </div>
-        <div class="w-30">
-          <h3>Telefon</h3>
-          <p class="mt-3">+49 (173) 599 40 40</p>
-        </div>
-      </div>
-      <div class="contact-maps-container mt-2">
-
-        <div class="time-card-wrapper">
-          <div class="flex-row">
-            <img src="images/final-min/time-management-[green-clock].png" alt="green clock icon" width="40px"
-              height="49px" class="hour-img" loading="lazy" />
-          </div>
-          <div class="time-item">
-            <div class="d-inline-block">
-              <p class="time-period" data-lang="office1_openning_info">In Wiesbaden sind unsere Öffnungszeiten an den
-                aktiven Tagen, nämlich
-                Montag bis
-                Samstag</p>
-
-              <div class="txt-center mt-1">
-                <time>10:00</time>-<time>20:00</time>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-map-card">
-            <h3 data-lang="address_title">Adress</h3>
-            <!-- <p class="mt-2 mb-2">Arndstraße 11 <br>60325 <br>Frankfurt am Main</p> -->
-            <p class="mt-2 mb-2">Emanuel-Geibel-Str. 18 <br>65185 <br>Wiesbaden</p>
-            <div class="flex-row weekdays">
-              <div class="day-item open-day" data-lang="weekday_1">Montag</div>
-              <div class="day-item open-day" data-lang="weekday_2">Dienstag</div>
-              <div class="day-item open-day" data-lang="weekday_3">Mittwoch</div>
-              <div class="day-item open-day" data-lang="weekday_4">Donnerstag</div>
-              <div class="day-item open-day" data-lang="weekday_5">Freitag</div>
-              <div class="day-item open-day" data-lang="weekday_6 ">Samstag</div>
-              <div class="day-item d-none" data-lang="weekday_7">Sonntag</div>
-            </div>
-            <iframe class="contact-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.6462701631594!2d8.233213800000001!3d50.074185899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bdbe0a638db803%3A0x9ef0c66ac2526bbd!2sEmanuel-Geibel-Stra%C3%9Fe%2018%2C%2065185%20Wiesbaden!5e0!3m2!1sen!2sde!4v1700676294207!5m2!1sen!2sde"
-              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Wiesbaden office location"></iframe>
-            <!-- <iframe class="contact-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.489655540568!2d8.659142!3d50.114558699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd09511f2633d3%3A0x5f0f6c757bc84980!2sArndtstra%C3%9Fe%2011%2C%2060325%20Frankfurt%20am%20Main!5e0!3m2!1sen!2sde!4v1700676883333!5m2!1sen!2sde"
-              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Frankfurt office location"></iframe> -->
-          </div>
-        </div>
-
-        <!-- <div class="time-card-wrapper">
-          <div class="flex-row">
-            <img src="images/final-min/time-management-[green-clock].png" alt="green clock icon" width="40px"
-              height="49px" class="hour-img" loading="lazy" />
-          </div>
-          <div class="time-item">
-            <p class="d-inline-block time-period" data-lang="office2_openning_info">In Wiesbaden sind unsere
-              Öffnungszeiten an den aktiven Tagen, nämlich
-              Dienstag,
-              Mittwoch, Donnerstag und Samstag <br>
-            </p>
-            <div class="txt-center mt-1">
-              <time>10:00</time>-<time>20:00</time>
-            </div>
-          </div>
-          <div class="contact-map-card">
-            <h3 data-lang="address_title">Adress</h3>
-            <p class="mt-2 mb-2">Emanuel-Geibel-Str. 18 <br>65185 <br>Wiesbaden</p>
-            <div class="flex-row weekdays">
-              <div class="day-item d-none" data-lang="weekday_1">Montag</div>
-              <div class="day-item open-day" data-lang="weekday_2">Dienstag</div>
-              <div class="day-item open-day" data-lang="weekday_3">Mittwoch</div>
-              <div class="day-item open-day" data-lang="weekday_4">Donnerstag</div>
-              <div class="day-item d-none" data-lang="weekday_5">Freitag</div>
-              <div class="day-item open-day" data-lang="weekday_6">Samstag</div>
-              <div class="day-item d-none" data-lang="weekday_7">Sonntag</div>
-            </div>
-            <iframe class="contact-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.6462701631594!2d8.233213800000001!3d50.074185899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bdbe0a638db803%3A0x9ef0c66ac2526bbd!2sEmanuel-Geibel-Stra%C3%9Fe%2018%2C%2065185%20Wiesbaden!5e0!3m2!1sen!2sde!4v1700676294207!5m2!1sen!2sde"
-              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Wiesbaden office location"></iframe>
-          </div>
-        </div> -->
-      </div>
-
-      <p class="mt-5" data-lang="contact_by_social_media_text">Erreichen Sie uns in den sozialen Medien </p>
-      <div class="flex-row mb-3">
-        <ul class="social-icons">
-          <li class="mr-2"><a href="https://www.facebook.com/Psikolog.FiratTuran/" class="social-icon icon-facebook"
-              aria-label="Facebook" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32
-              " viewBox="0 0 48 48">
-                <path fill="#fff"
-                  d="M29,3c-5.523,0-10,4.477-10,10v5h-6v8h6v19h8V26h7l1-8h-8v-4c0-2.209,1.791-4,4-4h4V3.322 C33.091,3.125,30.921,2.996,29,3L29,3z">
-                </path>
-              </svg>
-            </a>
-          </li>
-          <li><a href="https://www.instagram.com/psikolog.firatturan/" class="social-icon icon-instagram"
-              aria-label="Instagram" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
-                height="32" viewBox="0 0 50 50" style="fill:#FFFFFF;">
-                <path
-                  d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
-                </path>
-              </svg></a></li>
-        </ul>
-      </div>
-    </section>
+  <div class="container">
+    <h1>Wartungsarbeiten</h1>
+    <p>Unsere Website wird gerade gewartet. Bitte haben Sie etwas Geduld. Wir sind bald wieder online!</p>
+    <div class="loader"></div>
+    <p>Vielen Dank für Ihr Verständnis.</p>
   </div>
-  <a href="https://wa.me/491735994040" class="float-wp whatsapp-wrapper" target="_blank" aria-label="whatsapp">
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 72 72"
-      style="fill:#FFFFFF;">
-      <path
-        d="M 36 12 C 22.745 12 12 22.745 12 36 C 12 40.435 13.207688 44.585391 15.304688 48.150391 L 12.234375 59.65625 L 24.302734 56.955078 C 27.764734 58.891078 31.752 60 36 60 C 49.255 60 60 49.255 60 36 C 60 22.745 49.255 12 36 12 z M 36 20 C 44.837 20 52 27.163 52 36 C 52 44.837 44.837 52 36 52 C 32.147 52 28.613563 50.637141 25.851562 48.369141 L 23.328125 48.933594 L 23.970703 46.527344 C 21.505703 43.713344 20 40.036 20 36 C 20 27.163 27.163 20 36 20 z M 28.833984 26.857422 C 28.492984 26.857422 27.946469 26.980422 27.480469 27.482422 C 27.022469 27.984422 25.714844 29.192203 25.714844 31.658203 C 25.714844 34.116203 27.521391 36.498172 27.775391 36.826172 C 28.029391 37.162172 31.277734 42.379766 36.427734 44.384766 C 40.697734 46.046766 41.568906 45.716859 42.503906 45.630859 C 43.430906 45.550859 45.498922 44.422859 45.919922 43.255859 C 46.340922 42.086859 46.340938 41.085 46.210938 40.875 C 46.081937 40.672 45.750188 40.547875 45.242188 40.296875 C 44.734187 40.046875 42.245297 38.832969 41.779297 38.667969 C 41.318297 38.502969 40.978484 38.415969 40.646484 38.917969 C 40.305484 39.418969 39.338109 40.548953 39.037109 40.876953 C 38.745109 41.213953 38.453313 41.252953 37.945312 41.001953 C 37.437312 40.750953 35.804094 40.224578 33.871094 38.517578 C 32.368094 37.194578 31.354547 35.557641 31.060547 35.056641 C 30.766547 34.555641 31.02725 34.28225 31.28125 34.03125 C 31.51125 33.81225 31.788969 33.452109 32.042969 33.162109 C 32.287969 32.864109 32.375969 32.659266 32.542969 32.322266 C 32.717969 31.994266 32.629906 31.696313 32.503906 31.445312 C 32.377906 31.194312 31.394359 28.721375 30.943359 27.734375 C 30.563359 26.904375 30.166734 26.879094 29.802734 26.871094 C 29.507734 26.856094 29.165984 26.857422 28.833984 26.857422 z">
-      </path>
-    </svg>
-  </a>
 </body>
 
 </html>
