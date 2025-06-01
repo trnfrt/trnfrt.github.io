@@ -127,6 +127,10 @@ function updateTranslations() {
   $("[data-lang=navigation_text_4]").text(language.navigation_text_4);
   $("[data-lang=navigation_text_5]").text(language.navigation_text_5);
   $("[data-lang=navigation_text_6]").text(language.navigation_text_6);
+  $("[data-lang=navigation_text_7]").text(language.navigation_text_7);
+  $("[data-lang=navigation_text_8]").text(language.navigation_text_8);
+
+
   $("[data-lang=job_title]").text(language.job_title);
   $("[data-lang=job_short_description]").text(language.job_short_description);
   $("[data-lang=welcome_title]").text(language.welcome_title);
@@ -162,6 +166,7 @@ function updateTranslations() {
   $("[data-lang=teenager_list_item_8]").text(language.teenager_list_item_8);
   $("[data-lang=teenager_list_item_9]").text(language.teenager_list_item_9);
   $("[data-lang=teenager_list_item_10]").text(language.teenager_list_item_10);
+  $("[data-lang=teenager_drawing_info_1]").text(language.teenager_drawing_info_1);
   $("[data-lang=adult_list_item_1]").text(language.adult_list_item_1);
   $("[data-lang=adult_list_item_2]").text(language.adult_list_item_2);
   $("[data-lang=adult_list_item_3]").text(language.adult_list_item_3);
@@ -171,11 +176,55 @@ function updateTranslations() {
   $("[data-lang=adult_list_item_7]").text(language.adult_list_item_7);
   $("[data-lang=adult_list_item_8]").text(language.adult_list_item_8);
   $("[data-lang=adult_list_item_9]").text(language.adult_list_item_9);
+  $("[data-lang=adult_drawing_info_1]").text(language.adult_drawing_info_1);
+
   $("[data-lang=family_list_item_1]").text(language.family_list_item_1);
   $("[data-lang=family_list_item_2]").text(language.family_list_item_2);
   $("[data-lang=family_list_item_3]").text(language.family_list_item_3);
+  $("[data-lang=family_list_item_4]").text(language.family_list_item_4);
+  $("[data-lang=family_list_item_5]").text(language.family_list_item_5);
+  $("[data-lang=family_drawing_info_1]").text(language.family_drawing_info_1);
+
+  $("[data-lang=game_therapy_list_item_1]").text(language.game_therapy_list_item_1);
+  $("[data-lang=game_therapy_list_item_2]").text(language.game_therapy_list_item_2);
+  $("[data-lang=game_therapy_list_item_3]").text(language.game_therapy_list_item_3);
+  $("[data-lang=game_therapy_list_item_4]").text(language.game_therapy_list_item_4);
+  $("[data-lang=game_therapy_list_item_5]").text(language.game_therapy_list_item_5);
   $("[data-lang=game_therapy_info_1]").text(language.game_therapy_info_1);
+
+  $("[data-lang=autism_list_item_1]").text(language.autism_list_item_1);
+  $("[data-lang=autism_list_item_2]").text(language.autism_list_item_2);
+  $("[data-lang=autism_list_item_3]").text(language.autism_list_item_3);
+  $("[data-lang=autism_list_item_4]").text(language.autism_list_item_4);
+  $("[data-lang=autism_list_item_5]").text(language.autism_list_item_5);
+  $("[data-lang=autism_drawing_info_1]").text(language.autism_drawing_info_1);
+
+
   $("[data-lang=home_greeting_text]").text(language.home_greeting_text);
+  $("[data-lang=home_greeting_text_second]").text(language.home_greeting_text_second);
+  $("[data-lang=home_greeting_text_third]").text(language.home_greeting_text_third);
+  $("[data-lang=home_greeting_text_fourth]").text(language.home_greeting_text_fourth);
+
+  $("[data-lang=faq_question_1]").text(language.faq_question_1);
+  $("[data-lang=faq_answer_1]").text(language.faq_answer_1);
+
+
+  $("[data-lang=faq_question_2]").text(language.faq_question_2);
+  $("[data-lang=faq_answer_2]").text(language.faq_answer_2);
+
+
+  $("[data-lang=faq_question_3]").text(language.faq_question_3);
+  $("[data-lang=faq_answer_3]").text(language.faq_answer_3);
+
+
+  $("[data-lang=faq_question_4]").text(language.faq_question_4);
+  $("[data-lang=faq_answer_4]").text(language.faq_answer_4);
+
+
+  $("[data-lang=faq_question_5]").text(language.faq_question_5);
+  $("[data-lang=faq_answer_5]").text(language.faq_answer_5);
+
+
   $("[data-lang=weekday_1]").text(language.weekday_1);
   $("[data-lang=weekday_2]").text(language.weekday_2);
   $("[data-lang=weekday_3]").text(language.weekday_3);

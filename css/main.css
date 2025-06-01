@@ -20,7 +20,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   justify-content: space-around;
   margin: 0 2rem;
 }
@@ -185,6 +186,11 @@
 }
 
 .px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-4 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -459,7 +465,8 @@ section {
 
 nav {
   display: flex;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   width: 100%;
   background-color: #415a76;
   padding: 10px;
@@ -584,10 +591,6 @@ img {
 
 .icon-facebook {
   padding: 10px 14px;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #322f30;
 }
@@ -598,41 +601,14 @@ img {
 
 .icon-instagram {
   padding: 10px 14px;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #322f30;
 }
 
 .icon-instagram:hover {
   background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f09433", endColorstr="#bc1888", GradientType=1);
 }
 
 .float-wp {
@@ -800,7 +776,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.3; /* You can adjust the opacity as desired */
+  opacity: 0.3;
+  /* You can adjust the opacity as desired */
 }
 
 .color-overlay-child-A {
@@ -846,6 +823,58 @@ img {
   font-size: 1.5rem;
 }
 
+#section-faq .faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+#section-faq .faq-container .faq-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+#section-faq .faq-container .faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+  transition: background 0.3s ease;
+}
+#section-faq .faq-container .faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.3s ease;
+}
+#section-faq .faq-container .faq-item[open] summary::after {
+  content: "-";
+  transform: rotate(180deg);
+}
+#section-faq .faq-container .faq-item .faq-answer {
+  max-height: 20rem;
+  overflow: hidden;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #555;
+  animation: fadeIn 0.5s ease forwards;
+}
+#section-faq .faq-container .faq-item[open] .faq-answer {
+  animation: fadeIn 0.5s ease forwards;
+  padding-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
@@ -1016,40 +1045,31 @@ img {
     width: 100vw;
   }
   .cardA_child-image-1 {
-    background-image: linear-gradient(to right bottom, #ffbb00, #ff7730),
-      url(../images/sample-image/mobile/childWithCars-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffbb00, #ff7730), url(../images/sample-image/mobile/childWithCars-900x600-mobile.jpg);
   }
   .cardA_child-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-      url(../images/sample-image/mobile/childWithDrawing-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/sample-image/mobile/childWithDrawing-900x600-mobile.jpg);
   }
   .cardA_child-image-3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-      url(../images/sample-image/mobile/childWithTeddyBear-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/sample-image/mobile/childWithTeddyBear-900x600-mobile.jpg);
   }
   .cardA_teenager-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-      url(../images/sample-image/mobile/youngs1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../images/sample-image/mobile/youngs1-900x600-mobile.jpg);
   }
   .cardA_teenager-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-      url(../images/sample-image/mobile/youngSad1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/sample-image/mobile/youngSad1-900x600-mobile.jpg);
   }
   .cardA_adult-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-      url(../images/sample-image/mobile/adultTherapy1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../images/sample-image/mobile/adultTherapy1-900x600-mobile.jpg);
   }
   .cardA_adult-image-2 {
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-      url(../images/sample-image/mobile/adultTherapy2-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/sample-image/mobile/adultTherapy2-900x600-mobile.jpg);
   }
   .cardA_adult-image-3 {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-      url(../images/sample-image/mobile/adultTherapy3-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/sample-image/mobile/adultTherapy3-900x600-mobile.jpg);
   }
   .cardA_family-image-1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-      url(../images/sample-image/mobile/family1-900x600-mobile.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../images/sample-image/mobile/family1-900x600-mobile.jpg);
   }
 }
 /**************************/
@@ -1135,6 +1155,4 @@ img {
 
 .no-flexbox-gap .footer-nav li:not(:last-child) {
   margin-bottom: 2.4rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
